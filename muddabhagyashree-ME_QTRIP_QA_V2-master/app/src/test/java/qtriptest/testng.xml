@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="YourTestSuite" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="com.relevantcodes.extentreports.testng.listener.ExtentITestListenerAdapter" />
+    </listeners>
+
+    <!-- Reference to extent-config.xml -->
+    <parameter name="extent-config" value="src/test/resources/extent-config.xml" />
+
+    <!-- Your test configurations -->
+    <test name="YourTest">
+        <classes>
+            <class name="qtriptest.tests.TestCase_01" />
+            <class name="qtriptest.tests.TestCase_02" />
+            <class name="qtriptest.tests.TestCase_03" />
+            <class name="qtriptest.tests.TestCase_04" />
+            
+        </classes>
+    </test>
+</suite>

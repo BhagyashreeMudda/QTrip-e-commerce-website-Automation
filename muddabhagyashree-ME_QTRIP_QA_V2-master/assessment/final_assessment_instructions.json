@@ -1,0 +1,22 @@
+{
+    "assesments":[
+        {
+            "assesmentDescription":"Verify testCase 1 : Iteration 1 ",
+            "find":".//test-method[contains(@name,'TestCase01') and @status='PASS']//value[text()[contains(.,'testuser@gmail.com')] or text()[contains(.,'abc@123')]]",
+            "expectedCount":2,
+            "errorMessage":"testCase01:Dataset1 validation Failed"
+        },
+        {
+            "assesmentDescription":"Verify testCase 1 : Iteration 2 ",
+            "find":".//test-method[contains(@name,'TestCase01') and @status='PASS']//value[text()[contains(.,'TESTUSER@gmail.com')] or text()[contains(.,'123456.0')]]",
+            "expectedCount":2,
+            "errorMessage":"testCase01:Dataset2 validation Failed"
+        },
+        {
+            "assesmentDescription":"Verify testCase 1 : Iteration 3 ",
+            "find":".//test-method[contains(@name,'TestCase01') and @status='PASS']//value[text()[contains(.,'123_USER_low@gmail.com')] or text()[contains(.,'QWERTY!!!!')]]",
+            "expectedCount":2,
+            "errorMessage":"testCase01:Dataset3 validation Failed"
+        }
+    ]
+}

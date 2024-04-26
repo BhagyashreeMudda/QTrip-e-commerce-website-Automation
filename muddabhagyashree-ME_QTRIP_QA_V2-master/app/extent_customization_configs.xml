@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <!-- Extent Reports configuration settings -->
+    <configuration>
+        <!-- Report HTML document title -->
+        <documentTitle>Extent Reports - Automation Results</documentTitle>
+        
+        <!-- Chart location (inside report) -->
+        <chartVisibilityOnOpen>true</chartVisibilityOnOpen>
+        
+        <!-- Custom styles -->
+        <styles>
+            <![CDATA[
+                .test-status { 
+                    width: 30px; 
+                    height: 30px; 
+                }
+            ]]>
+        </styles>
+    </configuration>
+    
+    <!-- Start your configurations for different test classes -->
+    
+    <!-- Configuration for TestCase_01 -->
+    <extent>
+        <test-class>qtriptest.tests.TestCase_01</test-class>
+        <start>2022-02-01T00:00:00</start>
+        <end>2022-02-01T23:59:59</end>
+        <timezone>UTC</timezone>
+        <output>test-output/extent-report-TestCase_01.html</output>
+    </extent>
+    
+    <!-- Configuration for TestCase_02 -->
+    <extent>
+        <test-class>qtriptest.tests.TestCase_02</test-class>
+        <start>2022-02-01T00:00:00</start>
+        <end>2022-02-01T23:59:59</end>
+        <timezone>UTC</timezone>
+        <output>test-output/extent-report-TestCase_02.html</output>
+    </extent>
+
+    <extent>
+        <test-class>qtriptest.tests.TestCase_03</test-class>
+        <start>2022-02-01T00:00:00</start>
+        <end>2022-02-01T23:59:59</end>
+        <timezone>UTC</timezone>
+        <output>test-output/extent-report-TestCase_02.html</output>
+    </extent>
+
+    <extent>
+        <test-class>qtriptest.tests.TestCase_04</test-class>
+        <start>2022-02-01T00:00:00</start>
+        <end>2022-02-01T23:59:59</end>
+        <timezone>UTC</timezone>
+        <output>test-output/extent-report-TestCase_02.html</output>
+    </extent>
+    
+    
+</extentreports>
